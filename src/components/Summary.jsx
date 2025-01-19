@@ -108,25 +108,19 @@ export default function Summary({ currentSummary: summaryProp }) {
           <div className="bg-gray-50 p-3 rounded-lg">
             <p className="text-sm text-gray-500">Views</p>
             <p className="font-semibold">
-              {typeof summaryProp.metadata.viewCount === 'number' 
-                ? summaryProp.metadata.viewCount.toLocaleString() 
-                : 'N/A'}
+              {summaryProp.metadata.viewCount }
             </p>
           </div>
           <div className="bg-gray-50 p-3 rounded-lg">
             <p className="text-sm text-gray-500">Likes</p>
             <p className="font-semibold">
-              {typeof summaryProp.metadata.likeCount === 'number'
-                ? summaryProp.metadata.likeCount.toLocaleString()
-                : 'N/A'}
+              {summaryProp.metadata.likeCount}
             </p>
           </div>
           <div className="bg-gray-50 p-3 rounded-lg">
             <p className="text-sm text-gray-500">Comments</p>
             <p className="font-semibold">
-              {typeof summaryProp.metadata.commentCount === 'number'
-                ? summaryProp.metadata.commentCount.toLocaleString()
-                : 'N/A'}
+              {summaryProp.metadata.commentCount}
             </p>
           </div>
         </div>
